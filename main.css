@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.maxWidth {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 0 auto;
+
+}
+/* Navigation */
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #b1acac;
+    z-index: 1;
+}
+.nav.sticky {
+    padding: 15px;
+    background: rgb(119, 218, 243);
+}
+
+.nav .maxWidth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav .logo a{
+color: white;
+font-size: 35px;
+font-weight: 600;
+}
+.nav .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.nav .menu li a {
+    display: block;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    font-size:  18px;
+    font-weight: 500;
+    margin-left: 25px;
+    
+}
+.nav .menu li a:hover {
+    color: rgb(143, 143, 143);
+}
+/* Menu button */
+.menuButton {
+    cursor: pointer;
+}
+
+
+/* Navigation */
+
+/* Home */
+.home {
+    display: flex;
+    background: url("images/banner-3.jpg") repeat center;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 720px;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: flex-end;
+}
+.home .maxWidth {
+    margin: auto 0 auto 30px;
+}
+.home .homeContent {
+    padding-right: 150px;
+}
+.home .homeContent .text1 {
+font-size: 25px;
+}
+.home .homeContent .text2 {
+font-size: 50px;
+font-weight: 700;
+}
+.home .homeContent .text3 {
+font-size: 25px;
+}
+.home .homeContent a {
+    display: inline-block;
+    background: #f8d8d8;
+    color: rgb(185, 185, 185);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+}
+.home .homeContent a:hover {
+    background-color: rgb(166, 243, 243);
+}
+/* End of Home */
+
+/* About */
+section {
+    padding: 100px 0;
+}
+.about {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+}
+.about .title {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    
+}
+.about .aboutContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about .aboutContent .left {
+    width: 45%;
+}
+.about .aboutContent .left img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: transform 0.4s ease;
+
+}
+.about .aboutContent .left img:hover {
+    transform: scale(1.15);
+}
+.about .aboutContent .right {
+    width: 55%;
+}
+.about .aboutContent .right .text {
+    margin-bottom: 15px;
+}
+.about .aboutContent .right p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* End of About */
+
+/* Services */
+.services {
+    color: black;
+    background: #cfc9c9;
+}
+.services .title {
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+
+}
+.services .servicesContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .servicesContent .card{
+    width: calc(33% - 20px);
+    background: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+}
+.services .servicesContent .card:hover {
+    background-color: antiquewhite;
+}
+.services .servicesContent .card .box {
+    transition: all 0.3s ease;
+}
+.services .servicesContent .card .box:hover {
+    transform: scale(1.05);
+
+}
+.services .servicesContent img{
+height: 60;
+width: 60px;
+}
+
+.services .servicesContent .text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px; 
+    margin: 5px;
+    font-weight: 600;
+}
+.services .servicesContent p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+/* End of Services */
+
+/* Start of Sections */
+.skills {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.skills .title {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.skills .skillsContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skillsContent .column {
+    width: calc(50% - 30px);
+}
+.skills .skillsContent .left .text {
+margin-bottom: 20px;
+font-size: 20px;
+font-weight: 600;
+}
+.skills .skillsContent .left p {
+    text-align: justify;
+    font-size: 18px;
+}
+.skills .skillsContent .left a {
+    display: inline-block;
+    background: #dbaaaa;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+}
+.skills .skillsContent .left a:hover {
+    background-color: rgb(220, 145, 255);
+}
+.skills .skillsContent .right .bar {
+    margin-bottom: 15px;
+}
+.skills .skillsContent .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.skills .skillsContent .right span {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+}
+.skills .skillsContent .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skillsContent .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+left: 0;
+right: 0;
+background: #dbaaaa;
+}
+.skillsContent .right .html::before {
+width: 90%;
+}
+.skillsContent .right .css::before {
+    width: 85%;
+}
+.skillsContent .right .js::before {
+    width: 80%;
+}
+.skillsContent .right .php::before {
+    width: 80%;
+}
+.skillsContent .right .mySql::before {
+    width: 80%;
+}
+/* End of Sections */
+
+/* Start of Contact */
+.contact {
+font-family: 'Courier New', Courier, monospace;
+background: url("images/banner-5.jpg");
+display: flex;
+background-size: cover;
+background-attachment: fixed;
+color: #e24c4c;
+}
+.contact .title {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.contact .contactContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contactContent .column {
+    width: calc(50% - 30px);
+}
+.contact .contactContent .column .text {
+    color: #af4c4c;
+    font-size: 25px; 
+    margin: 5px 0;
+    font-weight: 600;
+}
+.contact .contactContent .left p {
+    font-size: 18px;
+    text-align: justify;
+}
+.contact .contactContent .row {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.contact .contactContent .row .info {
+    margin-left: 20 px;
+}
+.contact .contactContent .left img {
+height: 20px;
+width: 50px;
+}
+.contact .contactContent .info .head {
+    color: #af4c4c;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.contact .contactContent .info .subTitle {
+    color: #4c5eaf;
+    font-weight: 600;
+}
+.contact .right form .fields {
+    display: flex;
+
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name {
+    margin-right: 10px;
+}
+.contact .right form .email {
+    margin-left: 10px;
+
+}
+.contact .right form .field input,
+.contact .right form .textarea  textarea {
+height: 100%;
+width: 100%;
+border: 1px solid lightgrey;
+border-radius: 5px;
+outline: none;
+padding: 0 10px;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #4c5eaf;
+}
+.contact .right form .textarea textarea {
+    resize: none;
+}
+.contact .right form .button {
+    height: 50px;
+    width: 180px;
+}
+.contact .right form .button button {
+    height: 80%;
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contact .right form .button button:hover {
+    color: #4c5eaf;
+    background: #fca1a1;
+}
+/* End of Contact */
+
+/* Start of Footer */
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: #af4c4c;
+    color: white;
+    padding: 10px 25px;
+}
+footer span a {
+    text-decoration: none;
+    color: rgb(185, 167, 144);
+
+}
+footer span a:hover {
+    text-decoration: underline;
+
+}
+/* End of Footer */
+
+/* Responsive Media Queries */
+
+@media (max-width: 1920px) {
+    .home .maxWidth{
+        margin-left: 0px;
+    }
+    .menuButton {
+        display: none;
+        z-index: 999;
+
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .aboutContent .left img {
+        height: 250px;
+        width: 250;
+    }
+}
+@media (max-width: 991px) {
+    .maxWidth {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px) {
+    .menuButton {
+        display: block;
+        z-index: 999;
+    }
+    .nav .menu {
+        position: fixed;
+        height: 80vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        padding-top: 80px;
+        opacity: 90%;
+        text-align: center;
+        background: black;
+        transition: all 0.3s ease;
+    }
+    .nav .menu.active {
+        left: 0;
+    }
+    .nav .menu li {
+        display: block;
+    }
+    .nav .menu li a {
+        display: inline-block;
+        margin: 20px;
+        font-size: 25px;
+    }
+    .home .homeContent .text2 {
+        font-size: 30px;
+    }
+    .home .homeContent a {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .maxWidth {
+        max-width: 930px;
+    }
+    .about .aboutContent .column {
+        width: 100%;
+    }
+    .about .aboutContent .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .aboutContent .right {
+        flex: 100%;
+    }
+    .services .servicesContent .card{
+        width: calc(50% - 10px);
+        margin-bottom: 18px;
+    }
+    .skills .skillsContent .column,
+    .contact .contactContent .column {
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+}
+@media (max-width: 690px) {
+    .maxWidth {
+        padding: 0 20px;
+    }
+    .services .servicesContent .card {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+margin: 0;
+    }
+}
+
+/* End of Responsive Media Queries */
